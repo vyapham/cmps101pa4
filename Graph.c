@@ -47,7 +47,7 @@ Graph newGraph(int n) {
 }
 
 void freeGraph(Graph* pG) {
-        for (int i = 1; i < getOrder(*pG); i++) {
+        for (int i = 1; i < getOrder(*pG) + 1; i++) {
 		freeList(&(*pG) -> L[i]);
 	}
 	free((*pG) -> L);
